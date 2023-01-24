@@ -1,0 +1,18 @@
+title: "Bigpicture DOI demo"
+description: "Demo for Bigpicture landing page"
+
+theme: "jekyll-theme-cayman"
+url: "https://bigpicture.doi.demo.se"
+
+collections:
+  datasets:
+    output: true
+    layout: "dataset.html"
+    permalink: ":path"
+
+defaults:
+  - scope:
+      path: ""
+      type: "datasets"
+    values:
+      layout: "dataset"

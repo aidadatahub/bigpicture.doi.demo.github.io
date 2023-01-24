@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>AIDA Data Hub Services | Bigpicture DOI demo</title>
+<meta name="generator" content="Jekyll v3.9.2" />
+<meta property="og:title" content="AIDA Data Hub Services" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Services provided by the AIDA Data Hub." />
+<meta property="og:description" content="Services provided by the AIDA Data Hub." />
+<link rel="canonical" href="http://localhost:4000/services/" />
+<meta property="og:url" content="http://localhost:4000/services/" />
+<meta property="og:site_name" content="Bigpicture DOI demo" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="AIDA Data Hub Services" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Services provided by the AIDA Data Hub.","headline":"AIDA Data Hub Services","url":"http://localhost:4000/services/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.3.2/viewer.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css?v=c4f8f724c9cc59f735a22c32db3f408da3d6002c">
+    <link rel="stylesheet" href="//cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+    <link rel="shortcut icon" href="/assets/icons/aida-icon.png">
+  </head>
+  <body>
+    <header class="page-header" role="banner">
+      <h1 class="project-name">AIDA Data Hub Services</h1>
+      <h2 class="project-tagline no-anchor">Services provided by the <a href='/'>AIDA Data Hub</a>.</h2>
+    </header>
+
+    <main id="content" class="main-content" role="main">
+      <p>We offer leading edge services to researchers in Swedish medical imaging AI, in
+collaboration with the Analytic Imaging Diagnostics Arena (<a href="/about/aida">AIDA</a>),
+the Center for Medical Image Science and Visualization
+(<a href="https://liu.se/cmiv">CMIV</a>), and the <a href="https://scilifelab.se">SciLifeLab</a>
+Bioinformatics Platform (<a href="https://nbis.se">NBIS</a>) and
+<a href="https://scilifelab.se/data">Data Center</a>:</p>
+
+<ul id="markdown-toc">
+  <li><a href="#dgx-2" id="markdown-toc-dgx-2">AIDA DGX-2 Service</a></li>
+  <li><a href="#nextcloud" id="markdown-toc-nextcloud">AIDA Nextcloud</a>    <ul>
+      <li><a href="#sharing-large-amounts-of-data" id="markdown-toc-sharing-large-amounts-of-data">Sharing large amounts of data</a></li>
+    </ul>
+  </li>
+  <li><a href="#pacs" id="markdown-toc-pacs">AIDA PACS</a></li>
+  <li><a href="#wiki" id="markdown-toc-wiki">AIDA Wiki</a></li>
+  <li><a href="#github" id="markdown-toc-github">AIDA GitHub</a></li>
+  <li><a href="#slack" id="markdown-toc-slack">AIDA Slack</a></li>
+</ul>
+
+<p>These services are offered to AIDA partners. All Swedish organizations active in
+medical imaging diagnostics or AI are invited to <a href="/about/aida#join">become a member of AIDA</a>.</p>
+
+<h2 id="dgx-2">AIDA DGX-2 Service</h2>
+<p>Compute resource for AI and training on sensitive personal data for research.</p>
+
+<p>AIDA Data Hub is collaborating with <a href="https://nvidia.com">Nvidia</a> to operate a
+<a href="https://www.nvidia.com/en-us/data-center/dgx-2/">DGX-2 machine learning system</a>
+at <a href="https://liu.se/cmiv">CMIV</a>, as a service for leading edge AI researchers in
+Swedish medical imaging diagnostics, secure enough for use with sensitive
+personal data. We believe that these experts will produce the best results if
+given the freedom to exercise their expertise according to their best judgement.</p>
+
+<p><img alt="Nvidia DGX-2 Machine learning system" src="/assets/images/dgx-2.png" width="40%" class="right" /></p>
+
+<p>The service was established in a phased approach, opening for research use
+immediately on its delivery day of 2020-03-05, and from then on adding further
+features, stability, and guarantees in stages. The final step to full production
+was taken on 2020-11-09, when it was approved for use with sensitive personal data.</p>
+
+<p>The service is set up to conform with <a href="https:/liu.se/">Linköping University</a>
+information security guidelines for systems intended for processing information
+of extreme confidentiality, in collaboration with Linköping University Data
+Protection Officers. System security was validated using international
+penetration testing expertise.</p>
+
+<p>Service is offered to AIDA partners, in compute projects, based on
+<a href="https://docs.google.com/document/d/1sGc8K7Q3sTTwCIYPhmvA8GHN0gb8cic1km8wwXuvWbI/edit#">Data Processing Agreements</a>,
+or <a href="https://drive.google.com/file/d/12AOYf8boZoOu5HUXaXPjQd641tMprzdz/view">Servcice Agreements</a>
+for anonymous data. Project members get full access to private project VMs and
+persistent storage through personal VPN accounts, and use secure SSH pubkeys to
+SSH to VMs and SFTP to storage. Outgoing connections are limited and appoved
+based on feasibility, where IP:PORT is easiest, and distributed services over
+CDN are harder. Storage/VMs are granted based on availability
+(cf <a href="https://docs.google.com/spreadsheets/d/1wA7H3Uh53ADVYptiQWXROnMD67HvPOAwSvW20EnzlFM/edit#gid=254337069">booking sheet</a>).
+Projects work with own private data. AIDA Data Hub <a href="/datasets">Datasets</a> are
+pre-mounted on request. Projects cannot access resources belonging to other
+projects.</p>
+
+<p>VMs run latest v4.x Nvidia DGX OS, have multiple Nvidia V100 GPUs on PCI
+passthrough, and mount project storage over 10Gbit connection with FSC to local
+NVMe raid.</p>
+
+<p>More information on the <a href="#wiki">AIDA internal wiki</a>
+<a href="https://scilifelab.atlassian.net/wiki/spaces/aida/pages/1235189793/AIDA+DGX-2+Service">DGX-2 page</a>.</p>
+
+<h2 id="nextcloud">AIDA Nextcloud</h2>
+<p><img alt="AIDA nextcloud" src="/assets/icons/aida-icon.png" width="20%" class="right" style="margin-top: -2ex;" /></p>
+
+<p>AIDA Data hub uses <a href="https://nextcloud.aida.scilifelab.se">nextcloud.aida.scilifelab.se</a>
+to allow AIDA Partners to share anonymous research data with the world. Offered
+in collaboration with the <a href="https://scilifelab.se">SciLifeLab</a>
+<a href="https://scilifelab.se/data">Data Center</a>.</p>
+
+<p>For sharing non-anonymous data, please see the <a href="#dgx-2">AIDA DGX-2 Service</a> above.</p>
+
+<p>More information on the <a href="#wiki">AIDA internal wiki</a>
+<a href="https://scilifelab.atlassian.net/wiki/spaces/aida/pages/1239678997/Nextcloud">Nexcloud page</a>.</p>
+
+<h3 id="sharing-large-amounts-of-data">Sharing large amounts of data</h3>
+<p>We recommend using the nextcloud client, or <a href="https://rclone.org">rclone.org</a> with the WebDAV interface.
+Always use the latest version. Both nextcloud and rclone develop fast.</p>
+
+<p>AIDA users can access their data through their WebDAV url, on the form:</p>
+
+<p><code class="language-plaintext highlighter-rouge">https://nextcloud.aida.scilifelab.se/remote.php/dav/files/USERNAME/</code></p>
+
+<p>For share links, use the url:</p>
+
+<p><code class="language-plaintext highlighter-rouge">https://nextcloud.aida.scilifelab.se/public.php/webdav</code></p>
+
+<p>The <code class="language-plaintext highlighter-rouge">USERNAME</code> is then the last part of the link, i.e:</p>
+
+<p><code class="language-plaintext highlighter-rouge">https://nextcloud.aida.scilifelab.se/s/USERNAME</code></p>
+
+<h2 id="pacs">AIDA PACS</h2>
+<p><img alt="Picture Archive and Communication System" src="/assets/images/pacs.png" width="30%" class="right" style="margin-top: -2ex; transform: scaleX(-1);" /></p>
+
+<p>AIDA offers access to a cloud-based production grade
+<a href="https://aida.medtech4health.se/ids7/">Picture Archive and Communication System</a> (PACS)
+with both a desktop client (Windows) and a web client for viewing and interacting
+with image data. The AIDA PACS can be used by AIDA Partners to explore different
+integration opportunities, annotate data and perform reader studies. Please reach
+out to <a href="mailto:aida@nbis.se">AIDA</a> for access and further information.
+Provided by AIDA.</p>
+
+<h2 id="wiki">AIDA Wiki</h2>
+<p>AIDA uses an <a href="https://scilifelab.atlassian.net/wiki/spaces/aida">AIDA Confluence space</a>
+as an internal wiki, for documentation and internal materials. Offered in
+collaboration with <a href="https://scilifelab.se">SciLifeLab</a>.</p>
+
+<p>AIDA partners get accounts
+<a href="mailto:aida@nbis.se?subject=New%20AIDA%20wiki%20account%3F&amp;body=Hi!%0D%0A%0D%0ACan%20I%20please%20have%20an%20AIDA%20wiki%20account%3F%0D%0A%0D%0AName%3A%20...%0D%0AAffiliation%3A%20...%0D%0AEmail%3A%20...%20(cc%20here)%0D%0A%0D%0A%2FMY_NAME">on request</a>.
+Click the link, or remember to provide name, affiliation and email address
+in your request!</p>
+
+<h2 id="github">AIDA GitHub</h2>
+<p>AIDA uses an <a href="https://github.com/orgs/NBISweden/teams/aida/">AIDA Team</a> in the
+<a href="https://scilifelab.se">SciLifeLab</a> <a href="https://nbis.se">Bioinformatics Platform</a>
+(NBIS) GitHub account to facilitate code sharing and co-development in AIDA.
+Members can create public or private repos to admin themselves, and easily share
+with AIDA, NBIS, invited external parties, nobody, or the world.</p>
+
+<p>Examples of AIDA-internal repositories include training materials from AIDA coding
+workshops, and PACS integration examples in pathology and radiology. Because of
+size limitations, Some large
+<a href="https://nextcloud.aida.scilifelab.se/apps/files/?dir=/AIDA/Training%20materials&amp;fileid=31886">AI training data</a>
+from AIDA coding workshops are made available on <a href="#nextcloud">AIDA nextcloud</a>
+instead.</p>
+
+<p>More information on the <a href="#wiki">AIDA internal wiki</a>
+<a href="https://scilifelab.atlassian.net/wiki/spaces/aida/pages/1239678997/Nextcloud">Nexcloud page</a>.</p>
+
+<h2 id="slack">AIDA Slack</h2>
+<p>The primary channel to all-to-all support and discussion in AIDA.
+AIDA uses <a href="https://scilifelab.se">SciLifeLab</a> <a href="https://nbis.se">Bioinformatics Platform</a>
+(NBIS) Slack:</p>
+
+<ul>
+  <li><a href="https://nbisweden.slack.com/archives/C01S39EQ9S9">#aida-dgx2</a>: AIDA DGX-2 chat - Tech support and general discussion on the AIDA DGX-2 service!</li>
+  <li><a href="https://nbisweden.slack.com/archives/C01S6HPGYAX">#aida-announce</a>: AIDA Announcements - Progress in medical imaging diagnostics AI!</li>
+  <li><a href="https://nbisweden.slack.com/archives/C01S6HASR5Z">#aida-general</a>: AIDA General chat - Everything AI in medical imaging diagnostics!</li>
+</ul>
+
+<p>More information on the <a href="#wiki">AIDA internal wiki</a>
+<a href="https://scilifelab.atlassian.net/wiki/spaces/aida/pages/1239285826/Chat">Chat page</a>.</p>
+
+
+      <footer class="site-footer">
+  <div class="columns">
+    <div class="column">
+      <a href="/datasets/">Datasets</a>
+      <a href="/search/">Search</a>
+      <a href="/metrics/">Metrics</a>
+      <a href="/api/">API</a>
+    </div>
+    <div class="column text-center">
+      <a href="/">AIDA Data Hub</a>
+      <a href="/about/">About</a>
+      <a href="/jobs/">Jobs</a>
+    </div>
+    <div class="column text-right">
+      <a href="/sharing/">Data Sharing Policy</a>
+      <a href="/prio/">Acquisition Priorities</a>
+      <a href="/services/">Services</a>
+    </div>
+  </div>
+  <img alt="SciLifeLab logo" src="/assets/images/scilifelab-logo.png" width="30%" class="center"/>
+</footer>
+
+    </main>
+    <script src="/assets/js/anchor.min.js"></script>
+    <script>
+        anchors.add("h2:not(.no-anchor), h3, h4, h5, h6");
+    </script>
+  </body>
+</html>
