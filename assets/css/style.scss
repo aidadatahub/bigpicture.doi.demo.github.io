@@ -2,10 +2,13 @@
 ---
 // - All pages ----------------------------------------------------------------
 @import "{{ site.theme }}";
+
+
 .page-header {
-  background-color: #003f72;
-  background-image: url(/assets/images/aida-banner-smal.jpg);
-  background-size: 200%;
+  background-color: #146eb8;
+  background-image: url(/assets/images/bigpicture-banner.jpg);
+  color: #1C007B;
+  background-size: 50%;
   background-position-y: center;
 }
 .project-tagline {
