@@ -2,7 +2,8 @@ title: "Bigpicture DOI demo"
 description: "Demo for Bigpicture landing page"
 
 theme: "jekyll-theme-cayman"
-url: "https://datahub.aida.bigpicture"
+url: https://datahub.aida.scilifelab.se
+baseurl: /bigpicture.doi.demo.github.io
 
 collections:
   datasets:
